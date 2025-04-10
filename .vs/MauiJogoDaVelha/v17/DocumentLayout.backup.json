@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\leonardo\\source\\repos\\MauiJogoDaVelha\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E96BF131-0FB6-47FF-9257-103A2BC6ED9A}|MauiJogoDaVelha\\MauiJogoDaVelha.csproj|c:\\users\\leonardo\\source\\repos\\mauijogodavelha\\mauijogodavelha\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E96BF131-0FB6-47FF-9257-103A2BC6ED9A}|MauiJogoDaVelha\\MauiJogoDaVelha.csproj|solutionrelative:mauijogodavelha\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E96BF131-0FB6-47FF-9257-103A2BC6ED9A}|MauiJogoDaVelha\\MauiJogoDaVelha.csproj|c:\\users\\leonardo\\source\\repos\\mauijogodavelha\\mauijogodavelha\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E96BF131-0FB6-47FF-9257-103A2BC6ED9A}|MauiJogoDaVelha\\MauiJogoDaVelha.csproj|solutionrelative:mauijogodavelha\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96BF131-0FB6-47FF-9257-103A2BC6ED9A}|MauiJogoDaVelha\\MauiJogoDaVelha.csproj|c:\\users\\leonardo\\source\\repos\\mauijogodavelha\\mauijogodavelha\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E96BF131-0FB6-47FF-9257-103A2BC6ED9A}|MauiJogoDaVelha\\MauiJogoDaVelha.csproj|solutionrelative:mauijogodavelha\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\leonardo\\source\\repos\\MauiJogoDaVelha\\MauiJogoDaVelha\\MainPage.xaml",
               "RelativeDocumentMoniker": "MauiJogoDaVelha\\MainPage.xaml",
               "ToolTip": "C:\\Users\\leonardo\\source\\repos\\MauiJogoDaVelha\\MauiJogoDaVelha\\MainPage.xaml",
               "RelativeToolTip": "MauiJogoDaVelha\\MainPage.xaml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAmwCoAAABiAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwCEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-10T11:47:25.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\leonardo\\source\\repos\\MauiJogoDaVelha\\MauiJogoDaVelha\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiJogoDaVelha\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\leonardo\\source\\repos\\MauiJogoDaVelha\\MauiJogoDaVelha\\MainPage.xaml.cs",
               "RelativeToolTip": "MauiJogoDaVelha\\MainPage.xaml.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowBgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAYwL8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T11:47:36.186Z",
               "EditorCaption": ""

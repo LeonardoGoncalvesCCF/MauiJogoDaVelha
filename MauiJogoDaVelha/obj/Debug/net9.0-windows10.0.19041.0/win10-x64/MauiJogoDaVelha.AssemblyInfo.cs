@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MauiJogoDaVelha")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b2cd9ce9aff92f87392186abafb4847421fefea5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4de72ad2a7737d66e64b54254799ef0cc733e0bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MauiJogoDaVelha")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MauiJogoDaVelha")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

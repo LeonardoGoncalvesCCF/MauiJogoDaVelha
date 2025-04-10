@@ -29,11 +29,12 @@
     <!--Margin afastamento de todo elemento grid das beiradas -->
     <!--ColumnSpacing afastamento das colunas-->
     <!--RowSpacing afastamento das linhas-->
-    <Grid RowDefinitions="*, *, *, *" 
-          ColumnDefinitions="*, *, *, *"
+    <Grid
+          RowDefinitions="*, *, *, *" 
+          ColumnDefinitions="*, *, *"
           ColumnSpacing="10"
           RowSpacing="10"
-          Margin="10">
+          Margin="10"  >
         
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
                Text="Jogo da Velha"/>
