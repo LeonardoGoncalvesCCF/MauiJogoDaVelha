@@ -45,23 +45,20 @@
             } 
 
         }
-
-        XGanhando();
-
-         
+   
         // -- Limpar Campos
         private void Limpar_Clicked(object sender, EventArgs e)
         {
             Zerar();
         }
+
         bool TodosPreenchidos()
         {
-            if (btn10.Text != "" && btn11.Text != "" && btn12.Text != "" &&
-                btn20.Text != "" && btn21.Text != "" && btn22.Text != "" &&
-                btn30.Text != "" && btn31.Text != "" && btn32.Text != "") 
-                { return true; }
+
+            if (!string.IsNullOrEmpty(btn10.Text) && !string.IsNullOrEmpty(btn11.Text) && !string.IsNullOrEmpty(btn12.Text)&& !string.IsNullOrEmpty(btn20.Text) && !string.IsNullOrEmpty(btn21.Text) && !string.IsNullOrEmpty(btn22.Text)
+                && !string.IsNullOrEmpty(btn30.Text) && !string.IsNullOrEmpty(btn31.Text) && !string.IsNullOrEmpty(btn32.Text))
+            { return true; }
             return false;
-           
         }
 
         //Metodo para Limpar botões e deixar clivavel
