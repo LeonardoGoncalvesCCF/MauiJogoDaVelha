@@ -1,11 +1,8 @@
-﻿using Microsoft.Maui.Controls.Shapes;
-
-namespace MauiJogoDaVelha
+﻿namespace MauiJogoDaVelha
 {
     public partial class MainPage : ContentPage
     {
         string vez = "X";
-
 
         public MainPage()
         {
@@ -36,16 +33,36 @@ namespace MauiJogoDaVelha
                 vez = "X";  // tranforma vez em X
             }
 
-            Ganhando();
+
+            // Se alguém ganhar, para por aqui
+            if (XGanhando() || OGanhando())
+                return;
+
+            // Só chama Velha() se todos os botões estiverem preenchidos
+            if (TodosPreenchidos())
+            {
+                Velha();
+            } 
 
         }
 
+        XGanhando();
+
+         
         // -- Limpar Campos
         private void Limpar_Clicked(object sender, EventArgs e)
         {
             Zerar();
         }
-
+        bool TodosPreenchidos()
+        {
+            if (btn10.Text != "" && btn11.Text != "" && btn12.Text != "" &&
+                btn20.Text != "" && btn21.Text != "" && btn22.Text != "" &&
+                btn30.Text != "" && btn31.Text != "" && btn32.Text != "") 
+                { return true; }
+            return false;
+           
+        }
 
         //Metodo para Limpar botões e deixar clivavel
         void Zerar()
@@ -77,7 +94,7 @@ namespace MauiJogoDaVelha
             vez = "X";
         }
 
-        void Ganhando()
+        bool XGanhando()
         {
             // Verificando se o X ganhou em Linhas
             //  se X ganhou na Primeira linha //
@@ -85,19 +102,23 @@ namespace MauiJogoDaVelha
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
             // se X ganhou na Segunda linha //
             else if (btn20.Text == "X" && btn21.Text == "X" && btn22.Text == "X")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
             // se X ganhou na Terceira linha //
             else if (btn30.Text == "X" && btn31.Text == "X" && btn32.Text == "X")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
-                Zerar(); // Limpando botões  
+                Zerar(); // Limpando botões
+                return true;
             }
+
 
             // ----------------------------------------------------------------------------- \\
             // Verificando se X ganhou em Colunas
@@ -105,19 +126,22 @@ namespace MauiJogoDaVelha
             if (btn10.Text == "X" && btn20.Text == "X" && btn30.Text == "X")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
-                Zerar(); // Limpando botões 
+                Zerar(); // Limpando botões
+                return true;
             }
             // se X ganhou na Coluna 2
             else if (btn11.Text == "X" && btn21.Text == "X" && btn31.Text == "X")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
             // se X ganhou na Coluna 3
             else if (btn12.Text == "X" && btn22.Text == "X" && btn32.Text == "X")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
 
             // ----------------------------------------------------------------------------- \\
@@ -125,34 +149,42 @@ namespace MauiJogoDaVelha
             if (btn10.Text == "X" && btn21.Text == "X" && btn32.Text == "X")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
-                Zerar(); // Limpando botões 
+                Zerar(); // Limpando botões
+                return true;
             }
             else if (btn12.Text == "X" && btn21.Text == "X" && btn30.Text == "X")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
-                Zerar(); // Limpando botões 
+                Zerar(); // Limpando botões
+                return true;
             }
 
+            return false;
+        }
 
-
+        bool OGanhando()
+        {
             // Verificando se o O ganhou em Linhas
             //  se O ganhou na Primeira linha //
             if (btn10.Text == "O" && btn11.Text == "O" && btn12.Text == "O")
             {
                 DisplayAlert("Parabens", "O O GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
             // se X ganhou na Segunda linha //
             else if (btn20.Text == "O" && btn21.Text == "O" && btn22.Text == "O")
             {
                 DisplayAlert("Parabens", "O O GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
             // se X ganhou na Terceira linha //
             else if (btn30.Text == "O" && btn31.Text == "O" && btn32.Text == "O")
             {
                 DisplayAlert("Parabens", "O O GANHOU!", "ok");
-                Zerar(); // Limpando botões  
+                Zerar(); // Limpando botões
+                return true;
             }
 
             // ----------------------------------------------------------------------------- \\
@@ -161,19 +193,22 @@ namespace MauiJogoDaVelha
             if (btn10.Text == "O" && btn20.Text == "O" && btn30.Text == "O")
             {
                 DisplayAlert("Parabens", "O O GANHOU!", "ok");
-                Zerar(); // Limpando botões 
+                Zerar(); // Limpando botões
+                return true;
             }
             // se O ganhou na Coluna 2
             else if (btn11.Text == "O" && btn21.Text == "O" && btn31.Text == "O")
             {
                 DisplayAlert("Parabens", "O O GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
             // se O ganhou na Coluna 3
             else if (btn12.Text == "O" && btn22.Text == "O" && btn32.Text == "O")
             {
                 DisplayAlert("Parabens", "O O GANHOU!", "ok");
                 Zerar(); // Limpando botões
+                return true;
             }
 
             // Verificando se O ganhou nas diagonais
@@ -181,12 +216,23 @@ namespace MauiJogoDaVelha
             {
                 DisplayAlert("Parabens", "O O GANHOU!", "ok");
                 Zerar(); // Limpando botões 
+                return true;
             }
             else if (btn12.Text == "O" && btn21.Text == "O" && btn30.Text == "O")
             {
                 DisplayAlert("Parabens", "O X GANHOU!", "ok");
-                Zerar(); // Limpando botões 
+                Zerar(); // Limpando botões
+                return true;
             }
+            return false;  
         }
+       
+        void Velha()
+        {
+
+             DisplayAlert("EMPATE", "DEU EMPATE", "ok");
+             Zerar();
+        }
+        
     }
 }
